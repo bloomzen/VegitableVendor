@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreens.SearchFragment">
+
+
+    <ImageView
+        android:id="@+id/img_no_item"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/basket_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:visibility="invisible"
+        />
+
+
+
+    
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_no_item"
+        android:layout_centerHorizontal="true"
+        android:text="No Result Found !"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_20ssp"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/txt_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Search"
+        android:textColor="@color/categoriesColor"
+        android:textSize="@dimen/_18ssp"
+        />
+
+
+
+
+    <ImageButton
+        android:id="@+id/btn_search_back"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_close_gray"
+        android:layout_marginRight="@dimen/_20sdp"/>
+
+
+    <EditText
+        android:id="@+id/edt_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_search_back"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_60sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="What are you searching for?"
+        android:textColorHint="@color/textColorHint"
+        android:background="@drawable/shape_rect01"
+        android:padding="@dimen/_5sdp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_search_white"
+        android:background="@color/textColorGreen"
+        android:layout_toRightOf="@id/edt_search"
+        android:layout_marginLeft="@dimen/_minus35sdp"
+        android:layout_below="@id/btn_search_back"
+        android:layout_marginTop="@dimen/_15sdp"
+        app:civ_border_width="@dimen/_2sdp"
+        app:civ_border_color="@color/textColorGreen"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_search"
+        android:layout_marginTop="@dimen/_10sdp"/>
+
+
+
+
+</RelativeLayout>

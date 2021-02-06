@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.UpdatePriceListFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_addItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Change Prices"
+        android:textColor="#748A9D"
+        android:textSize="@dimen/_18ssp" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_10sdp">
+
+            <Button
+                android:id="@+id/btn_allProducts_updatePrice"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:text="All Products"
+                android:background="@drawable/shape_explore"
+
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13ssp"
+
+                android:paddingLeft="@dimen/_6sdp"
+                android:paddingRight="@dimen/_6sdp"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_vegetables_updatePrice"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/shape_explore01"
+                android:textColor="@color/textColorHint"
+                android:textSize="@dimen/_13ssp"
+                android:textAllCaps="false"
+                android:text="Vegetables"
+                />
+
+            <Button
+                android:id="@+id/btn_leafy_updatePrice"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:background="@drawable/shape_explore01"
+                android:textColor="@color/textColorHint"
+                android:textSize="@dimen/_13ssp"
+                android:textAllCaps="false"
+                android:text="Leafy"
+                />
+
+            <Button
+                android:id="@+id/btn_fruits_updatePrice"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_explore01"
+                android:textColor="@color/textColorHint"
+                android:text="Fruits"
+
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:textAllCaps="false"
+                />
+
+            <Button
+                android:id="@+id/btn_exotic_fruits_updatePrice"
+                android:layout_width="@dimen/_120sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginLeft="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_10sdp"
+                android:background="@drawable/shape_explore01"
+                android:text="Exotic\nVegetables"
+                android:textAllCaps="false"
+                android:textColor="@color/textColorHint"
+                android:textSize="@dimen/_13ssp"
+                android:layout_marginTop="@dimen/_minus10sdp"/>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycle_updatePriceList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_15sdp"/>
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreens.ProfileFragment">
+
+    <ImageButton
+        android:id="@+id/btn_profile_back"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_close_gray" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_profile_user"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/btn_profile_back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/ic_person_profile_blue"
+        app:civ_border_color="#2B2B2B"
+        app:civ_border_width="1dp"
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_pencil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@id/img_profile_user"
+        android:layout_alignRight="@id/img_profile_user"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:layout_marginRight="@dimen/_minus8sdp"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_edit_black"
+        app:civ_border_color="#2B2B2B"
+        app:civ_border_width="@dimen/_1sdp"
+
+
+        />
+
+    <RelativeLayout
+        android:id="@+id/myProfile"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/img_profile_user"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/img_profile"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_person_profile_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:layout_toRightOf="@id/img_profile"
+            android:layout_centerVertical="true"
+            android:textColor="@color/cartQuantity"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/changePassword"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/myProfile"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/img_password"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_key_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:layout_toRightOf="@id/img_password"
+            android:layout_centerVertical="true"
+            android:textColor="@color/cartQuantity"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/viewOrders"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/changePassword"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/img_cart"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_cart_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Orders"
+            android:layout_toRightOf="@id/img_cart"
+            android:layout_centerVertical="true"
+            android:textColor="@color/cartQuantity"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/aboutUS"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/viewOrders"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <ImageView
+            android:id="@+id/img_aboutUs"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:src="@drawable/ic_person_outline_blue"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About Us"
+            android:layout_toRightOf="@id/img_aboutUs"
+            android:layout_centerVertical="true"
+            android:textColor="@color/cartQuantity"
+            android:textSize="@dimen/_15sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/hotel_name_border"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_below="@id/aboutUS"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_100sdp"
+       android:backgroundTint="#ED7B7B"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ED7B7B"
+            android:src="@drawable/ic_next_white"
+            android:layout_marginLeft="@dimen/_50sdp"
+            />
+
+        <TextView
+            android:id="@+id/txtProceed"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:fontFamily="@font/acumin_rpro"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            />
+
+    </RelativeLayout>
+
+
+
+
+
+
+
+</RelativeLayout>

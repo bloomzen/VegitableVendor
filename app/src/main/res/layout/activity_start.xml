@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreens.StartingActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_150sdp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:layout_marginBottom="@dimen/_27sdp"
+        android:background="@android:color/white"
+        android:src="@drawable/full_logo" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/btn_explore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_90sdp"
+        android:background="@drawable/cart_item_explore"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingBottom="@dimen/_5sdp"
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:background="@color/textColorGreen"
+            android:src="@drawable/ic_next_white"
+
+            />
+
+        <TextView
+            android:id="@+id/txtProceed"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/acumin_rpro"
+            android:gravity="center"
+            android:text="EXPLORE"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

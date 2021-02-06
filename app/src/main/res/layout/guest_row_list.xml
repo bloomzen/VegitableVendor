@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:background="@drawable/shopping_holder"
+    android:orientation="horizontal">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="3dp"
+        android:background="@android:color/transparent"
+        app:cardBackgroundColor="@android:color/transparent"
+
+        >
+
+
+        <ImageView
+            android:id="@+id/img_guest_item"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:src="@drawable/ic_cart_blue"
+            android:padding="@dimen/_5sdp"
+            android:background="@android:color/transparent" />
+
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/txt_guest_itemName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@id/cardView"
+        android:text="Item Name"
+        android:textColor="@color/cart_itemColor"
+        android:textSize="@dimen/_12ssp" />
+
+    <TextView
+        android:id="@+id/txt_itemGuestPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_toRightOf="@id/txt_guest_itemName"
+        android:text="Item Price"
+        android:textColor="@color/cart_itemColor"
+        android:textSize="@dimen/_12ssp"
+        />
+
+
+    <TextView
+        android:id="@+id/txt_item_name_marathi_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_guest_itemName"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_toRightOf="@id/cardView"
+        android:text="In Marathi"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_12ssp" />
+
+
+
+    <LinearLayout
+        android:id="@+id/cart_guest"
+        android:layout_width="@dimen/_100sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/txt_itemGuestPrice"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_65sdp"
+
+        android:background="@drawable/cart_item_explore"
+
+
+        >
+
+        <ImageView
+            android:id="@+id/btn_minus_quantity_guest"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_minus10sdp"
+            android:background="@null"
+            android:src="@drawable/ic_minus_white"
+            />
+
+
+        <EditText
+            android:id="@+id/txt_quantity_guest"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginLeft="@dimen/_2sdp"
+            android:layout_marginTop="@dimen/_minus5sdp"
+            android:layout_marginRight="@dimen/_5sdp"
+
+            android:textColorHint="@android:color/white"
+            android:textColor="@android:color/white"
+            android:inputType="number"
+            android:ems="3"
+            android:textSize="@dimen/_12ssp"
+
+
+            />
+
+
+        <ImageView
+            android:id="@+id/btn_add_quantity_guest"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:background="@null"
+            android:layout_marginTop="@dimen/_minus10sdp"
+            android:src="@drawable/ic_add_white" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_toRightOf="@id/cart_guest"
+        android:layout_below="@id/txt_guest_itemName"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:background="@drawable/cart_item_explore"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txt_quantity_unit_guest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kgs"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@android:color/white"/>
+
+
+        <ImageView
+            android:id="@+id/img_select_unit_guest"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_arrow_drop_down_white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/btn_add_to_cart_guest"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:background="@drawable/cart_item_explore"
+        android:layout_below="@id/cart_guest"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_70sdp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add To Cart"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_50sdp"
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:src="@drawable/ic_shopping_cart_white"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+
+</RelativeLayout>

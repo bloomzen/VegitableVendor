@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserScreens.ChangePhoneFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/login_register_border"
+
+        >
+
+        <TextView
+            android:id="@+id/txt_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Profile"
+            android:fontFamily="@font/acumin_rpro"
+            android:textSize="@dimen/_20ssp"
+            android:textColor="#748A9D"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_40sdp"
+            />
+
+
+        <EditText
+            android:id="@+id/edt_change_otp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_signIn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:background="@drawable/shape_rect01"
+            android:textSize="@dimen/_16ssp"
+
+            android:hint="Enter Code"
+            android:inputType="number"
+            android:padding="@dimen/_10sdp"
+            android:textColor="@color/textColorHint"
+            android:fontFamily="@font/acumin_rpro"
+
+
+            />
+
+        <TextView
+            android:id="@+id/txt_sendAgain_MyProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send Again?"
+            android:textColor="@color/textColorHint"
+            android:fontFamily="@font/acumin_rpro"
+            android:textSize="@dimen/_16ssp"
+            android:layout_below="@id/edt_change_otp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/_170sdp"/>
+
+        <RelativeLayout
+            android:id="@+id/btn_change_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/cart_item_explore"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_gravity="center"
+            android:layout_below="@id/txt_sendAgain_MyProfile"
+            android:layout_marginBottom="@dimen/_90sdp"
+
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/textColorGreen"
+                android:src="@drawable/ic_next_white"
+                android:layout_marginLeft="@dimen/_50sdp"
+                />
+
+            <TextView
+                android:id="@+id/txtProceed"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:fontFamily="@font/acumin_rpro"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textSize="@dimen/_14ssp"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

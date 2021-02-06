@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.AddHotelFragment">
+
+    <TextView
+        android:id="@+id/txt_addItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Add Hotels"
+        android:textColor="#748A9D"
+        android:textSize="@dimen/_18ssp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_add_hotels"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/txt_addItems"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/ic_store_blue"
+        app:civ_border_color="#2B2B2B"
+        app:civ_border_width="1dp"
+
+
+        />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_pencil"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignEnd="@id/img_add_hotels"
+        android:layout_alignRight="@id/img_add_hotels"
+        android:layout_marginTop="@dimen/_110sdp"
+        android:layout_marginRight="@dimen/_minus8sdp"
+        android:background="@android:color/white"
+        android:src="@drawable/ic_edit_black"
+        app:civ_border_color="#2B2B2B"
+        app:civ_border_width="@dimen/_1sdp"
+
+
+        />
+
+    <EditText
+        android:id="@+id/edt_addHotelName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/shape_rect01"
+        android:drawableStart="@drawable/ic_edit_blue"
+        android:drawableLeft="@drawable/ic_edit_blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:hint="Add Hotel Name"
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:textColorHint="@color/textColorHint"
+        android:layout_below="@id/img_add_hotels"/>
+
+    <TextView
+        android:id="@+id/text_hotelMember"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/shape_rect01"
+        android:drawableStart="@drawable/ic_edit_blue"
+        android:drawableLeft="@drawable/ic_edit_blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Add Hotel Member"
+        android:padding="@dimen/_10sdp"
+        android:textColor="@color/textColorHint"
+        android:layout_below="@id/edt_addHotelName"/>
+
+    <ImageView
+        android:id="@+id/img_add_hotel_member"
+        android:layout_width="@dimen/_30sdp"
+        android:layout_height="@dimen/_30sdp"
+        android:src="@drawable/ic_arrow_drop_down_gray"
+        android:layout_toRightOf="@id/text_hotelMember"
+        android:layout_below="@id/edt_addHotelName"
+        android:layout_marginTop="@dimen/_10sdp"
+        />
+
+    <EditText
+        android:id="@+id/edt_addHotelAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="@drawable/shape_rect01"
+        android:drawableStart="@drawable/ic_edit_blue"
+        android:drawableLeft="@drawable/ic_edit_blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:hint="Add Hotel Address"
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:textColorHint="@color/textColorHint"
+        android:layout_below="@id/img_add_hotel_member"/>
+
+    <RelativeLayout
+        android:id="@+id/btn_add_hotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/cart_item_explore"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_below="@id/edt_addHotelAddress"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_30sdp"
+
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textColorGreen"
+            android:src="@drawable/ic_next_white"
+            android:layout_marginLeft="@dimen/_50sdp"
+            />
+
+        <TextView
+            android:id="@+id/txtProceed"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Add Hotel"
+            android:fontFamily="@font/acumin_rpro"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"
+            android:layout_marginTop="@dimen/_2sdp"/>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

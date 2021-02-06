@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Biroba Fresh Veggie</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string-array name="quantity_type">
+        <item>Kgs</item>
+        <item>Gms</item>
+        <item>Pcs</item>
+    </string-array>
+</resources>

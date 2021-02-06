@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.HotelListFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_AdminHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Hotel Category"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_24ssp" />
+
+   <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/hotelNameRecycler"
+       android:layout_width="match_parent"
+       android:layout_height="@dimen/_370sdp"
+       android:layout_marginTop="@dimen/_10sdp"
+       android:layout_marginRight="@dimen/_10sdp"
+       android:layout_marginLeft="@dimen/_10sdp"
+      />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_category_removeHotel"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/add_remove_hotel"
+            android:backgroundTint="#ED7B7B"
+
+            android:layout_marginTop="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/imgRemove"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_toLeftOf="@id/txt_remove"
+                android:src="@drawable/ic_next_white"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Remove Hotel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13ssp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_Category_addHotel"
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginLeft="@dimen/_20sdp"
+            android:background="@drawable/add_remove_hotel"
+            android:backgroundTint="#25D366"
+            android:layout_marginTop="@dimen/_10sdp"
+
+
+
+            >
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_toLeftOf="@id/txt_add"
+                android:src="@drawable/ic_next_white"
+                android:layout_centerVertical="true"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Add Hotel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_13ssp"
+                android:layout_centerInParent="true"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

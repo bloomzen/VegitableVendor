@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreens.MyProfileFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_signIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Profile"
+        android:fontFamily="@font/acumin_rpro"
+        android:textSize="@dimen/_20ssp"
+        android:textColor="#748A9D"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_40sdp"/>
+
+
+    <EditText
+        android:id="@+id/edt_myProfileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:drawableLeft="@drawable/ic_person_profile_blue"
+        android:drawableStart="@drawable/ic_person_profile_blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="My Name"
+        android:fontFamily="@font/acumin_rpro"
+        android:textColorHint="@color/textColorHint"
+        android:inputType="textEmailAddress"
+        />
+
+
+    <EditText
+        android:id="@+id/edt_myProfilePhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:drawableLeft="@drawable/ic_phone_gray"
+        android:drawableStart="@drawable/ic_phone_gray"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="Phone Number"
+        android:fontFamily="@font/acumin_rpro"
+        android:textColorHint="@color/textColorHint"
+        android:inputType="phone"
+        />
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/btn_change_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_150sdp"
+        android:background="@drawable/cart_item_explore"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center"
+
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textColorGreen"
+            android:src="@drawable/ic_next_white"
+            android:layout_marginLeft="@dimen/_50sdp"
+            />
+
+        <TextView
+            android:id="@+id/txtProceed"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:fontFamily="@font/acumin_rpro"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"/>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

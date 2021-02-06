@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.HotelPaymentFragment">
+
+    <TextView
+        android:id="@+id/txt_total_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Total Order"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_25ssp" />
+
+
+    <TextView
+        android:id="@+id/txt_TotalOrderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_total_order"
+        android:layout_centerHorizontal="true"
+        android:text="00"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_25ssp" />
+
+    <TextView
+        android:id="@+id/txt_total_balance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_TotalOrderNumber"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:text="Total Balance"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_25ssp" />
+
+
+    <TextView
+        android:id="@+id/txt_TotalPayment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_total_balance"
+        android:layout_centerHorizontal="true"
+        android:text="Rs 00"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_25ssp" />
+
+
+    <RelativeLayout
+        android:id="@+id/btn_payment_paid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_TotalPayment"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        android:background="@drawable/cart_item_explore"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/_2sdp"
+        android:paddingTop="@dimen/_5sdp"
+        android:paddingRight="@dimen/_2sdp"
+        android:paddingBottom="@dimen/_5sdp">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_40sdp"
+            android:background="@color/textColorGreen"
+            android:src="@drawable/ic_next_white"
+
+            />
+
+        <TextView
+            android:id="@+id/txtProceed"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:fontFamily="@font/acumin_rpro"
+            android:gravity="center"
+            android:text="PAID"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_13ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/btn_payment_paid"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@drawable/hotel_list_name_border"
+        android:layout_marginLeft="@dimen/_5sdp"
+        android:layout_marginRight="@dimen/_5sdp">
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_log"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"/>
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

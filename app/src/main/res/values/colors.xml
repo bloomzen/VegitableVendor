@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#25D366</color>
+    <color name="colorPrimaryDark">#25D366</color>
+    <color name="colorAccent">#25D366</color>
+
+    <color name="textColorGreen">#7BED8D</color>
+    <color name="textColorHint">#A6BCD0</color>
+
+    <color name="button_border">#00000029</color>
+    <color name="cart_item">#F0F4F8</color>
+    <color name="cart_itemColor">#2B2B2B</color>
+
+    <color name="categoriesColor">#748A9D</color>
+    <color name="cartQuantity">#A6BCD0</color>
+
+
+    <color name="colorAftercart">#16000000</color>
+
+
+
+   </resources>

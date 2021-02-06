@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserScreens.NewForgotActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_60sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Forgot Password"
+        android:textColor="@color/textColorGreen"
+        android:textSize="@dimen/_24ssp"/>
+
+
+    <EditText
+        android:id="@+id/edt_forgot_newPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:drawableLeft="@drawable/ic_key_blue"
+        android:drawableStart="@drawable/ic_key_blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="enter new password"
+        android:fontFamily="@font/acumin_rpro"
+        android:textColorHint="@color/textColorHint"
+        android:inputType="textPassword"
+        />
+
+
+    <EditText
+        android:id="@+id/edt_forgot_ConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_rect01"
+        android:padding="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:drawableLeft="@drawable/ic_key_blue"
+        android:drawableStart="@drawable/ic_key_blue"
+        android:drawablePadding="@dimen/_5sdp"
+        android:hint="enter Confirm password"
+        android:fontFamily="@font/acumin_rpro"
+        android:textColorHint="@color/textColorHint"
+        android:inputType="textPassword"
+        />
+
+    <RelativeLayout
+        android:id="@+id/btn_verify_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/cart_item_explore"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_220sdp"
+
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/textColorGreen"
+            android:src="@drawable/ic_next_white"
+            android:layout_marginLeft="@dimen/_50sdp"
+            />
+
+        <TextView
+            android:id="@+id/txtProceed"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:text="Change"
+            android:fontFamily="@font/acumin_rpro"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:textSize="@dimen/_14ssp"/>
+
+    </RelativeLayout>
+
+
+
+
+
+</LinearLayout>

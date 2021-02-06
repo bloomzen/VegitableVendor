@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:id="@+id/img_no_item"
+        android:layout_width="@dimen/_200sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:src="@drawable/basket_no"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_110sdp"
+        />
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_no_item"
+        android:layout_centerHorizontal="true"
+        android:text="No Result Found !"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_20ssp"/>
+
+
+
+</RelativeLayout>

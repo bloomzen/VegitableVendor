@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminScreen.ChangePriceFragment">
+
+    <TextView
+        android:id="@+id/txt_AdminHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Change Price"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_20ssp" />
+
+
+    <EditText
+        android:id="@+id/txt_itemName_change_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shopping_holder"
+        android:inputType="text"
+        android:padding="@dimen/_10sdp"
+        android:text="item name: "
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_15ssp" />
+
+
+    <TextView
+        android:id="@+id/txt_name_in_marathi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/shopping_holder"
+        android:padding="@dimen/_10sdp"
+        android:text="Item name in Marathi"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_15ssp" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_margin="@dimen/_10sdp"
+
+                android:background="@drawable/hotel_list_name_border">
+
+                <TextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Select Category"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/_15ssp" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_category"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <Button
+                                android:id="@+id/btn_cat_gold"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@drawable/shopping_holder"
+                                android:text="Gold"
+                                android:textColor="@color/textColorHint"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <Button
+                                android:id="@+id/btn_cat_silver"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@drawable/shopping_holder"
+                                android:text="Silver"
+                                android:textColor="@color/textColorHint"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <Button
+                                android:id="@+id/btn_cat_bronze"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@drawable/shopping_holder"
+                                android:text="Bronze"
+                                android:textColor="@color/textColorHint"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <Button
+                                android:id="@+id/btn_cat_fixed"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@drawable/shopping_holder"
+                                android:text="Fixed"
+                                android:textColor="@color/textColorHint"
+                                android:textSize="@dimen/_14ssp" />
+
+                            <Button
+                                android:id="@+id/btn_cat_guest"
+                                android:layout_width="@dimen/_70sdp"
+                                android:layout_height="@dimen/_70sdp"
+                                android:layout_marginLeft="@dimen/_10sdp"
+                                android:background="@drawable/shopping_holder"
+                                android:text="Guest"
+                                android:textColor="@color/textColorHint"
+                                android:textSize="@dimen/_14ssp" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/hotel_list_name_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="Current Price"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/_15ssp" />
+
+                <TextView
+                    android:id="@+id/txt_currentPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/shopping_holder"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/_5sdp"
+                    android:text="0"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/_15ssp" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_80sdp"
+                android:layout_margin="@dimen/_10sdp"
+                android:background="@drawable/hotel_list_name_border"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_changePrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="New Price"
+                    android:textColor="@color/textColorHint"
+                    android:textSize="@dimen/_15ssp" />
+
+                <EditText
+                    android:id="@+id/edt_changePriceGold"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/txt_changePrice"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/shopping_holder"
+                    android:hint="0"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/textColorHint" />
+
+                <EditText
+                    android:id="@+id/edt_changePriceSilver"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/txt_changePrice"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/shopping_holder"
+                    android:hint="0"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/textColorHint" />
+
+                <EditText
+                    android:id="@+id/edt_changePriceBronze"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/txt_changePrice"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/shopping_holder"
+                    android:hint="0"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/textColorHint" />
+
+                <EditText
+                    android:id="@+id/edt_changePriceFixed"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/txt_changePrice"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/shopping_holder"
+                    android:hint="0"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/textColorHint" />
+
+                <EditText
+                    android:id="@+id/edt_changePriceGuest"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_below="@+id/txt_changePrice"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:background="@drawable/shopping_holder"
+                    android:hint="0"
+                    android:padding="@dimen/_5sdp"
+                    android:textColorHint="@color/textColorHint" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/btn_price_change"
+                android:layout_width="@dimen/_200sdp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginBottom="@dimen/_50sdp"
+                android:background="@drawable/cart_item_explore"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp">
+
+                <ImageButton
+                    android:id="@+id/imageCheckOut"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@color/textColorGreen"
+                    android:src="@drawable/ic_next_white" />
+
+                <TextView
+                    android:id="@+id/btn_checkout"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_toRightOf="@id/imageCheckOut"
+                    android:background="@color/textColorGreen"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:gravity="center"
+                    android:text="CHANGE"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_12ssp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

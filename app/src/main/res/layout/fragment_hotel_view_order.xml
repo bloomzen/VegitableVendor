@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AdminScreen.HotelViewOrderFragment">
+
+
+
+
+
+    <LinearLayout
+       android:id="@+id/linearShop"
+        android:layout_width="@dimen/_220sdp"
+        android:layout_height="@dimen/_150sdp"
+        android:orientation="vertical"
+
+        android:background="@drawable/hotel_list_name_border"
+        android:backgroundTint="#A6BCD0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        >
+
+        <ImageView
+            android:id="@+id/img_shop"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:src="@drawable/ic_store_blue"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/circle_drawable"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <TextView
+            android:id="@+id/txt_shopName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Name"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/_15ssp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_5sdp"/>
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/hotelRecyclerOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearShop"
+        android:layout_margin="@dimen/_20sdp"
+        tools:listitem="@layout/order_list"
+        />
+
+
+
+</RelativeLayout>

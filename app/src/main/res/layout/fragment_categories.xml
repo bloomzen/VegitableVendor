@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UserScreens.CategoriesFragment">
+
+    <!--#80909    #027C06  #CAB705  #EEECEC #FF9800-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textColor="@color/categoriesColor"
+        android:textSize="@dimen/_20ssp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_19sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:id="@+id/linearIndian"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="#E91D0C"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/indian"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Indian"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLeafy"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:background="#027C06"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/leafy"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Leafy Vegetables"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearExotic"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:background="#D5857979"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/exotic"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Exotic"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linearFruits"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_120sdp"
+                android:background="#FF9800"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/_8sdp">
+
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_70sdp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:src="@drawable/fruits"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Fruits"
+                    android:textColor="@android:color/white"
+                    android:textSize="@dimen/_20ssp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+
+
+
+</LinearLayout>

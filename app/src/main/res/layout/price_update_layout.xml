@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/hotel_list_name_border"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_10sdp">
+
+    <ImageView
+        android:id="@+id/image_price_update_list"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_margin="@dimen/_10sdp"
+        android:background="@drawable/image_background"
+        android:src="@drawable/ic_cart_blue"
+        />
+
+    <TextView
+        android:id="@+id/text_price_update_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ITEM Name"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_12ssp"
+        android:layout_toRightOf="@id/image_price_update_list"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@id/image_price_update_list"
+       />
+
+
+    <Button
+        android:id="@+id/btn_update_price_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/cart_item_explore"
+        android:textColor="@android:color/white"
+        android:paddingLeft="@dimen/_10sdp"
+        android:paddingRight="@dimen/_10sdp"
+        android:layout_alignParentRight="true" />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.AdminViewHotelOrderFragment"
+
+    >
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shopping_holder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/txt_hotelName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Name"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#748A9D"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member:"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_hotelName"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <TextView
+            android:id="@+id/txt_memberType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Type"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_hotelName"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txt_orderID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderID:"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_member"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/txt_orderIDNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_memberType"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txt_orderON"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderON:"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_orderID"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/txt_orderONNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6767"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_orderIDNumber"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_alignParentRight="true" />
+
+        <TextView
+            android:id="@+id/items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items: "
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_orderON"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:layout_below="@id/txt_orderONNumber"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_pending_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/price"
+            android:layout_marginTop="@dimen/_10sdp"
+          android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+        <TextView
+            android:id="@+id/txt_total_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_pending_items"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="Rs: 12000"
+            android:textColor="#748A9D"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_15ssp"/>
+
+        <Button
+            android:id="@+id/btn_pending_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:background="@drawable/cart_item_explore"
+            android:textColor="@android:color/white"
+            android:paddingLeft="@dimen/_15sdp"
+
+            android:paddingRight="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_below="@id/recycler_pending_items"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_25sdp"/>
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

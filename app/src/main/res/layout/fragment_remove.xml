@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.RemoveFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_AdminHotel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/acumin_rpro"
+        android:text="Remove Hotel"
+        android:textColor="@color/textColorHint"
+        android:textSize="@dimen/_24ssp" />
+
+    <LinearLayout
+        android:layout_width="@dimen/_280sdp"
+        android:layout_height="@dimen/_270sdp"
+        android:layout_gravity="center"
+
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/admin_border"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_goldRel_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_8sdp"
+            android:background="@drawable/hotel_name_border"
+            android:backgroundTint="#FFD700"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgGold"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_toLeftOf="@id/txt_gold"
+                android:src="@drawable/ic_home_white"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Gold List Hotel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_silverRel_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/hotel_name_border"
+            android:backgroundTint="#A6BCD0"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgSilver"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_toLeftOf="@id/txt_Silver"
+                android:src="@drawable/ic_home_white"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Silver"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Silver List Hotel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18ssp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bronzeRel_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/hotel_name_border"
+            android:backgroundTint="#CD7F32"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgBronze"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+
+                android:layout_marginLeft="@dimen/_35sdp"
+                android:src="@drawable/ic_home_white"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_Bronze"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:layout_toRightOf="@id/imgBronze"
+                android:text="Bronze List Hotel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18ssp"
+
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_fixedRel_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:background="@drawable/hotel_name_border"
+            android:backgroundTint="#7B8AED"
+            android:padding="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/imgFixed"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_toLeftOf="@id/txt_fixed"
+                android:src="@drawable/ic_home_white"
+
+                />
+
+            <TextView
+                android:id="@+id/txt_fixed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text="Fixed List Hotel"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/_18ssp" />
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

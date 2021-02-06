@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.TotalItemsFragment">
+
+    <RelativeLayout
+        android:id="@+id/lineartotal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_300sdp"
+        android:layout_margin="@dimen/_20sdp"
+        android:background="@drawable/shopping_holder"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_date_picker_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/cart_item_explore"
+            android:paddingLeft="@dimen/_5sdp"
+            android:paddingRight="@dimen/_5sdp"
+            android:text="select a date"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txt_date_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_toRightOf="@id/btn_date_picker_item"
+            android:fontFamily="@font/acumin_rpro"
+            android:text="date"
+            android:textColor="@color/textColorHint"
+            android:textSize="@dimen/_15ssp" />
+
+        <TextView
+            android:id="@+id/txt_items"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_date_picker_item"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="Total Items"
+            android:textColor="@color/textColorHint"
+            android:textSize="@dimen/_15ssp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycle__total_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btn_date_picker_item"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_toRightOf="@id/btn_date_picker_item"
+
+            />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/btn_export_to_excel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lineartotal"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+
+        android:background="@drawable/cart_item_explore"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp"
+
+        >
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_minus3sdp"
+            android:background="@color/textColorGreen"
+            android:src="@drawable/ic_next_white" />
+
+        <TextView
+            android:id="@+id/txtProceed"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/acumin_rpro"
+            android:gravity="center"
+            android:text="Export Both To Excel"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/_14ssp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

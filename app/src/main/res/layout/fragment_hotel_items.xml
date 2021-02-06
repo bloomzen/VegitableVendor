@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AdminScreen.HotelItemsFragment">
+
+    <EditText
+        android:id="@+id/edt_hotelWiseSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_search_back"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:background="@drawable/shape_rect01"
+        android:drawableLeft="@drawable/ic_search_blue"
+        android:hint="Search"
+        android:padding="@dimen/_5sdp"
+        android:textColorHint="@color/textColorHint" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_hotel_items_date_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/cart_item_explore"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="select a date"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txt_hotel_item_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:text="Date"
+            android:textColor="@color/textColorHint"
+            android:textSize="@dimen/_15ssp" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_export_to_excel_hotelList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:background="@drawable/cart_item_explore"
+            android:paddingLeft="@dimen/_10sdp"
+            android:paddingRight="@dimen/_10sdp"
+            android:text="Export to excel"
+
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_gold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:text="Golden List"
+                    android:textColor="#748A9D"
+                    android:textSize="@dimen/_20sdp" />
+
+                <View
+                    android:layout_width="@dimen/_145sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/txt_gold"
+                    android:layout_toRightOf="@+id/txt_gold"
+                    android:background="@drawable/admin_list_hotel_holder" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_gold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_gold"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_silver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:text="Silver List"
+                    android:textColor="#748A9D"
+                    android:textSize="@dimen/_20sdp" />
+
+                <View
+                    android:layout_width="@dimen/_145sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/txt_silver"
+                    android:layout_toRightOf="@+id/txt_silver"
+                    android:background="@drawable/admin_list_hotel_holder" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_silver"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_silver"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_bronze"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:text="Bronze List"
+                    android:textColor="#748A9D"
+                    android:textSize="@dimen/_20sdp" />
+
+                <View
+                    android:layout_width="@dimen/_145sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/txt_bronze"
+                    android:layout_toRightOf="@+id/txt_bronze"
+                    android:background="@drawable/admin_list_hotel_holder" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_bronze"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_bronze"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_fixed_list"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:text="Fixed List"
+                    android:textColor="#748A9D"
+                    android:textSize="@dimen/_20sdp" />
+
+                <View
+                    android:layout_width="@dimen/_145sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/txt_fixed_list"
+                    android:layout_toRightOf="@+id/txt_fixed_list"
+                    android:background="@drawable/admin_list_hotel_holder" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_fixed"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_fixed_list"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_guest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_20sdp"
+                    android:fontFamily="@font/acumin_rpro"
+                    android:text="Guest List"
+                    android:textColor="#748A9D"
+                    android:textSize="@dimen/_20sdp" />
+
+                <View
+                    android:layout_width="@dimen/_145sdp"
+                    android:layout_height="@dimen/_3sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_toEndOf="@+id/txt_guest"
+                    android:layout_toRightOf="@+id/txt_guest"
+                    android:background="@drawable/admin_list_hotel_holder" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rl_guest"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txt_guest"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginRight="@dimen/_10sdp" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

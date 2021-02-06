@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.OrderApprovalFragment"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/edt_search_approve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_search_back"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:hint="Search"
+        android:inputType="number"
+        android:textColorHint="@color/textColorHint"
+        android:background="@drawable/hotel_list_name_border"
+        android:padding="@dimen/_10sdp"
+        android:drawableStart="@drawable/ic_search_blue"
+        android:drawableLeft="@drawable/ic_search_blue"
+        android:drawablePadding="@dimen/_10sdp"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_approve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+
+        />
+
+
+</LinearLayout>

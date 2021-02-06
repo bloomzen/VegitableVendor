@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminScreen.AdminOrderDetailsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shopping_holder"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp">
+
+        <TextView
+            android:id="@+id/txt_hotelName_view_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Name"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#748A9D"
+            android:layout_centerHorizontal="true"
+            />
+
+        <TextView
+            android:id="@+id/txt_member_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member:"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_hotelName_view_orders"
+            android:layout_marginTop="@dimen/_20sdp"/>
+
+        <TextView
+            android:id="@+id/txt_memberType_orders"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Member Type"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_hotelName_view_orders"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txt_orderID_view_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderID:"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_member_orders"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/txt_orderIDNumber_view_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xxxxx"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_memberType_orders"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/txt_orderON_view_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OrderON:"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_orderID_view_order"
+            android:layout_marginTop="@dimen/_5sdp"
+            />
+
+        <TextView
+            android:id="@+id/txt_orderONNumber_view_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="6767"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/txt_orderIDNumber_view_order"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/_10sdp"/>
+
+        <TextView
+            android:id="@+id/items_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Items: "
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_below="@id/txt_orderON_view_order"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/price_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:layout_below="@id/txt_orderONNumber_view_order"
+            android:layout_alignParentEnd="true"
+            android:textSize="@dimen/_18ssp"
+            android:textColor="#A6BCD0"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginRight="@dimen/_20sdp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_pending_items_view_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/items_order"
+            android:layout_below="@id/price_order"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+
+
+
+
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

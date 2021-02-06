@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_20sdp"
+    android:background="@drawable/shopping_holder">
+
+    <TextView
+        android:id="@+id/txt_Hotel_Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="Hotel Name: "
+        android:textColor="#A6BCD0"
+        android:textSize="@dimen/_17ssp"/>
+
+    <TextView
+        android:id="@+id/txt_Hotel_orderNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Order ID: "
+        android:textColor="#A6BCD0"
+        android:textSize="@dimen/_17ssp"
+        android:layout_below="@id/txt_Hotel_Name"/>
+
+    <TextView
+        android:id="@+id/txt_Hotel_orderDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_Hotel_orderNumber"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:text="Order ON: "
+        android:textColor="#A6BCD0"
+        android:textSize="@dimen/_17ssp" />
+
+
+
+
+
+</RelativeLayout>
