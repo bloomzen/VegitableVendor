@@ -9,8 +9,8 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="@dimen/_77sdp"
+        android:layout_height="@dimen/_70sdp"
         android:layout_margin="15dp"
         android:background="@android:color/transparent"
         app:cardBackgroundColor="@android:color/transparent"
@@ -22,8 +22,8 @@
 
         <ImageView
             android:id="@+id/img_item"
-            android:layout_width="@dimen/_62sdp"
-            android:layout_height="@dimen/_60sdp"
+            android:layout_width="@dimen/_77sdp"
+            android:layout_height="@dimen/_70sdp"
             android:background="@android:color/transparent"
             android:padding="@dimen/_5sdp"
             android:src="@drawable/ic_cart_blue"
@@ -72,7 +72,7 @@
 
     <LinearLayout
         android:id="@+id/cart"
-        android:layout_width="@dimen/_55sdp"
+        android:layout_width="@dimen/_60sdp"
         android:layout_height="@dimen/_20sdp"
         android:layout_below="@id/txt_itemName"
         android:layout_marginLeft="@dimen/_minus1sdp"
@@ -100,7 +100,8 @@
            android:layout_marginLeft="@dimen/_minus5sdp"
             android:layout_marginTop="@dimen/_minus5sdp"
             android:layout_marginRight="@dimen/_5sdp"
-            android:ems="3"
+            android:ems="2"
+            android:gravity="center"
 
             android:inputType="number"
             android:textColor="@android:color/white"
@@ -117,7 +118,7 @@
             android:layout_height="@dimen/_50sdp"
             android:layout_marginTop="@dimen/_minus15sdp"
             android:background="@null"
-            android:layout_marginLeft="@dimen/_minus10sdp"
+            android:layout_marginLeft="@dimen/_minus5sdp"
             android:src="@drawable/ic_add_white" />
 
 

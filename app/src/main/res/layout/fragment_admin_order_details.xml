@@ -103,7 +103,7 @@
             android:textSize="@dimen/_18ssp"
             android:textColor="#A6BCD0"
             android:layout_below="@id/txt_orderON_view_order"
-            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:layout_marginLeft="@dimen/_10sdp"
             />
 
@@ -122,14 +122,28 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_pending_items_view_order"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@id/items_order"
+
             android:layout_below="@id/price_order"
             android:layout_marginTop="@dimen/_10sdp"
             android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true"
             />
+
+
+        <TextView
+            android:id="@+id/txt_total_Price_view_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/recycler_pending_items_view_order"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:text="Rs: 12000"
+            android:textColor="#748A9D"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_alignParentRight="true"
+            android:textSize="@dimen/_15ssp"/>
 
 
 

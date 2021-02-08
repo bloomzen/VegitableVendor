@@ -313,16 +313,7 @@ public class orderPendingFragment extends Fragment {
     }
 
 
-    private String getYesterdayDate() {
-        DateFormat dateFormat = new SimpleDateFormat("yyyy.MMM.dd");
-        return dateFormat.format(yesterday());
-    }
 
-    private Date yesterday() {
-        Calendar cal = Calendar.getInstance();
-        cal.add(Calendar.DATE, -1);
-        return cal.getTime();
-    }
 
 
     private void getAllOrders() {

@@ -8,6 +8,8 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.core.view.ViewCompat;
+import androidx.core.widget.NestedScrollView;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -17,6 +19,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.ScrollView;
 import android.widget.Toast;
 
 import com.example.vendor.Adapters.AdapterGuestUser;
@@ -74,8 +77,9 @@ public class HomeFragment extends Fragment {
     String userType, userId;
 
     ImageView img_banner;
+    ScrollView dataScroll;
 
-
+    NestedScrollView nestedScrollView;
 
 
     @Override
@@ -93,20 +97,26 @@ public class HomeFragment extends Fragment {
 
             img_banner = view.findViewById(R.id.image_banner);
 
+            nestedScrollView = view.findViewById(R.id.nested);
+            nestedScrollView.setNestedScrollingEnabled(false);
+
             recyclerViewGroceries = view.findViewById(R.id.groceries_recycler_vies);
+
+
             RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(Vendor.getAppContext());
             recyclerViewGroceries.setNestedScrollingEnabled(false);
             recyclerViewGroceries.setLayoutManager(layoutManager);
 
 
             dbRef = FirebaseDatabase.getInstance().getReference();
+            dbRef.keepSynced(true);
 
             dbRef.child("banner").addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot snapshot) {
 
 
-                    try{
+                    try {
                         final String imageurl = snapshot.getValue().toString();
                         //Picasso.with(context).load(ItemImages).placeholder(R.drawable.ic_cart_blue).into(holder.ItemImage);
                         Picasso.with(Vendor.getAppContext()).load(imageurl).networkPolicy(NetworkPolicy.OFFLINE).placeholder(R.drawable.ic_cart_blue).into(img_banner, new Callback() {
@@ -120,7 +130,7 @@ public class HomeFragment extends Fragment {
                                 Picasso.with(Vendor.getAppContext()).load(imageurl).placeholder(R.drawable.banner).into(img_banner);
                             }
                         });
-                    }catch (Exception e){
+                    } catch (Exception e) {
                         img_banner.setImageResource(R.drawable.banner);
                     }
                 }
@@ -131,24 +141,19 @@ public class HomeFragment extends Fragment {
                 }
             });
 
-        }catch (Exception e){
-            Toast.makeText(Vendor.getAppContext(), "On Create Change Banner: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(Vendor.getAppContext(), "On Create Change Banner: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
 
         try {
 
-            SharedPreferences sh =this.getActivity().getSharedPreferences("MyLogin",MODE_PRIVATE);
-            userId = sh.getString("userId","");
-            userType = sh.getString("userType","");
+            SharedPreferences sh = this.getActivity().getSharedPreferences("MyLogin", MODE_PRIVATE);
+            userId = sh.getString("userId", "");
+            userType = sh.getString("userType", "");
             mProgress = new ProgressDialog(getContext());
             mProgress.setCanceledOnTouchOutside(false);
             mProgress.setTitle("Please wait....");
-
-
-
-
-
 
 
             loadAllProducts();
@@ -280,8 +285,8 @@ public class HomeFragment extends Fragment {
             });
 
 
-        }catch (Exception e){
-            Toast.makeText(Vendor.getAppContext(), "On Create: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(Vendor.getAppContext(), "On Create: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
         return view;
@@ -291,7 +296,7 @@ public class HomeFragment extends Fragment {
 
     private void loadAllProducts() {
 
-        try{
+        try {
             //show all products
             mProgress.setMessage("fetching all products");
             mProgress.show();
@@ -300,8 +305,9 @@ public class HomeFragment extends Fragment {
             productGuestList = new ArrayList<>();
             productList.clear();
             productGuestList.clear();
-             {
+            {
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+                databaseReference.keepSynced(true);
                 databaseReference.child("mart").orderByChild("productId").addChildEventListener(new ChildEventListener() {
                     @Override
                     public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
@@ -347,65 +353,63 @@ public class HomeFragment extends Fragment {
                 });
 
             }
-        }catch (Exception e){
-            Toast.makeText(Vendor.getAppContext(), "On Load All Products: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(Vendor.getAppContext(), "On Load All Products: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
 
 
+    }
+
+    private void showFruits() {
+
+        try {
+            //show fruits
+            mProgress.setMessage("fetching fruits");
+            mProgress.show();
+            productGuestList = new ArrayList<>();
+            productList = new ArrayList<>();
+            productList.clear();
+            productGuestList.clear();
+            DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+            databaseReference.keepSynced(true);
+            {
+
+                databaseReference.child("mart").child("4Fruit").addValueEventListener(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+                        if (snapshot.hasChildren()) {
+                            for (DataSnapshot ds : snapshot.getChildren()) {
+                                ContentData FruitProduct = ds.getValue(ContentData.class);
+                                productList.add(FruitProduct);
+                            }
+
+                            mProgress.dismiss();
+                        } else {
+                            mProgress.dismiss();
+                            Toast.makeText(Vendor.getAppContext(), "No Fruits", Toast.LENGTH_SHORT).show();
+                        }
+
+
+                        adapterProductUser = new AdapterProductUser(getContext(), productList);
+                        recyclerViewGroceries.setAdapter(adapterProductUser);
+                    }
+
+                    @Override
+                    public void onCancelled(@NonNull DatabaseError error) {
+
+                    }
+                });
+            }
+
+        } catch (Exception e) {
+            Toast.makeText(Vendor.getAppContext(), "load fruits: " + e.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+
 
     }
 
-    private void showFruits(){
-
-      try {
-          //show fruits
-          mProgress.setMessage("fetching fruits");
-          mProgress.show();
-          productGuestList = new ArrayList<>();
-          productList = new ArrayList<>();
-          productList.clear();
-          productGuestList.clear();
-          DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
-         {
-
-              databaseReference.child("mart").child("4Fruit").addValueEventListener(new ValueEventListener() {
-                  @Override
-                  public void onDataChange(@NonNull DataSnapshot snapshot) {
-
-                      if(snapshot.hasChildren()){
-                          for(DataSnapshot ds : snapshot.getChildren()){
-                              ContentData FruitProduct = ds.getValue(ContentData.class);
-                              productList.add(FruitProduct);
-                          }
-
-                          mProgress.dismiss();
-                      }else {
-                          mProgress.dismiss();
-                          Toast.makeText(Vendor.getAppContext(), "No Fruits", Toast.LENGTH_SHORT).show();
-                      }
-
-
-
-                      adapterProductUser = new AdapterProductUser(getContext(), productList);
-                      recyclerViewGroceries.setAdapter(adapterProductUser);
-                  }
-
-                  @Override
-                  public void onCancelled(@NonNull DatabaseError error) {
-
-                  }
-              });
-          }
-
-      }catch (Exception e){
-          Toast.makeText(Vendor.getAppContext(), "load fruits: "+e.getMessage(), Toast.LENGTH_SHORT).show();
-      }
-
-
-
-    }
-
-    public void showVegetables(){
+    public void showVegetables() {
 
         try {
             //show vegetables
@@ -415,24 +419,24 @@ public class HomeFragment extends Fragment {
             productList = new ArrayList<>();
             productList.clear();
             productGuestList.clear();
-           {
+            {
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+                databaseReference.keepSynced(true);
                 databaseReference.child("mart").child("1IndianVegetable").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                        if(snapshot.hasChildren()){
-                            for(DataSnapshot ds : snapshot.getChildren()){
+                        if (snapshot.hasChildren()) {
+                            for (DataSnapshot ds : snapshot.getChildren()) {
                                 ContentData VegetablesProduct = ds.getValue(ContentData.class);
                                 productList.add(VegetablesProduct);
                             }
 
                             mProgress.dismiss();
-                        }else {
+                        } else {
                             mProgress.dismiss();
                             Toast.makeText(Vendor.getAppContext(), "No Veggies", Toast.LENGTH_SHORT).show();
                         }
-
 
 
                         adapterProductUser = new AdapterProductUser(getContext(), productList);
@@ -446,16 +450,15 @@ public class HomeFragment extends Fragment {
                 });
 
             }
-        }catch (Exception e){
-            Toast.makeText(Vendor.getAppContext(), "Show Vegetable: "+ e.getMessage(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(Vendor.getAppContext(), "Show Vegetable: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-
 
 
     }
 
 
-    public void showLeafyVegetable(){
+    public void showLeafyVegetable() {
         try {
             //show exotic
             mProgress.setMessage("fetching Leafy Vegetables");
@@ -467,22 +470,22 @@ public class HomeFragment extends Fragment {
 
             {
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+                databaseReference.keepSynced(true);
                 databaseReference.child("mart").child("2LeafyVegetable").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                        if(snapshot.hasChildren()){
-                            for(DataSnapshot ds : snapshot.getChildren()){
+                        if (snapshot.hasChildren()) {
+                            for (DataSnapshot ds : snapshot.getChildren()) {
                                 ContentData exotic_vegetables_Product = ds.getValue(ContentData.class);
                                 productList.add(exotic_vegetables_Product);
                             }
 
                             mProgress.dismiss();
-                        }else {
+                        } else {
                             mProgress.dismiss();
                             Toast.makeText(Vendor.getAppContext(), "No Products", Toast.LENGTH_SHORT).show();
                         }
-
 
 
                         adapterProductUser = new AdapterProductUser(getContext(), productList);
@@ -495,13 +498,13 @@ public class HomeFragment extends Fragment {
                     }
                 });
             }
-        }catch (Exception e){
-            Toast.makeText(Vendor.getAppContext(), "On Exotic: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(Vendor.getAppContext(), "On Exotic: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
     }
 
 
-    public void showExoticVegetables(){
+    public void showExoticVegetables() {
 
         try {
             //show exotic
@@ -514,22 +517,22 @@ public class HomeFragment extends Fragment {
 
             {
                 DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference();
+                databaseReference.keepSynced(true);
                 databaseReference.child("mart").child("3Exotic").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
 
-                        if(snapshot.hasChildren()){
-                            for(DataSnapshot ds : snapshot.getChildren()){
+                        if (snapshot.hasChildren()) {
+                            for (DataSnapshot ds : snapshot.getChildren()) {
                                 ContentData exotic_vegetables_Product = ds.getValue(ContentData.class);
                                 productList.add(exotic_vegetables_Product);
                             }
 
                             mProgress.dismiss();
-                        }else {
+                        } else {
                             mProgress.dismiss();
                             Toast.makeText(Vendor.getAppContext(), "No Products", Toast.LENGTH_SHORT).show();
                         }
-
 
 
                         adapterProductUser = new AdapterProductUser(getContext(), productList);
@@ -542,15 +545,15 @@ public class HomeFragment extends Fragment {
                     }
                 });
             }
-        }catch (Exception e){
-            Toast.makeText(Vendor.getAppContext(), "On Exotic: "+e.getMessage(), Toast.LENGTH_SHORT).show();
+        } catch (Exception e) {
+            Toast.makeText(Vendor.getAppContext(), "On Exotic: " + e.getMessage(), Toast.LENGTH_SHORT).show();
         }
-
 
 
     }
 
 
-
-
 }
+
+
+

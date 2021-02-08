@@ -299,8 +299,7 @@ public class AdapterProductUser extends RecyclerView.Adapter<AdapterProductUser.
 
                 }
             } else if (userType.equalsIgnoreCase("Guest")) {
-                itemPrice = modelProduct.getItemPriceInGuest();
-                holder.itemPrice.setText("Rs " + itemPrice + "/kg");
+
                 Log.v("guest", "" + itemPrice);
 
                 EasyDB easyDB = EasyDB.init(context, "ITEM_GUEST_DB")
@@ -333,7 +332,7 @@ public class AdapterProductUser extends RecyclerView.Adapter<AdapterProductUser.
                             itemGmsUnit = gmsQuantity;
                         } else {
                             quantity[0] = Integer.parseInt(kgQuantity);
-                            itemGmsUnit = gmsQuantity   ;
+                            itemGmsUnit = gmsQuantity;
 
                         }
 
@@ -354,11 +353,23 @@ public class AdapterProductUser extends RecyclerView.Adapter<AdapterProductUser.
                 holder.linearLayout.setVisibility(View.GONE);
                 holder.linearGmsUnit.setVisibility(View.GONE);
 
-            }else if(isKgs.equals("dozen")){
+            } else if (isKgs.equals("dozen")) {
                 holder.txt_item_quantity.setText("dozen");
                 holder.linearLayout.setVisibility(View.GONE);
                 holder.linearGmsUnit.setVisibility(View.GONE);
             }
+
+
+            itemPrice = modelProduct.getItemPriceInGuest();
+
+            if(isKgs.equals("true")){
+                holder.itemPrice.setText("Rs " + itemPrice + "/kg"  );
+            }else if(isKgs.equals("false")){
+                holder.itemPrice.setText("Rs " + itemPrice + "/bunch"  );
+            }else if(isKgs.equals("dozen")){
+                holder.itemPrice.setText("Rs " + itemPrice + "/dozen"  );
+            }
+
         } catch (Exception e) {
             Log.v("excep", "" + e.getMessage());
         }
@@ -403,8 +414,7 @@ public class AdapterProductUser extends RecyclerView.Adapter<AdapterProductUser.
                 });
         holder.ItemName.setText("" + ItemNames);
         holder.ItemQuantity.setText("" + quantity[0]);
-        holder.txt_gms_unit.setText(""+itemGmsUnit);
-
+        holder.txt_gms_unit.setText("" + itemGmsUnit);
 
 
         holder.ItemSecQuantity.setOnClickListener(new View.OnClickListener() {

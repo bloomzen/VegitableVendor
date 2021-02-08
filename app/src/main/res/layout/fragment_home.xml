@@ -135,12 +135,15 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/scrollView">
+        android:layout_below="@id/scrollView"
+        android:id="@+id/nested"
+   >
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            >
 
             <ImageView
                 android:id="@+id/image_banner"
@@ -157,7 +160,8 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/groceries_recycler_vies"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
 
                 android:layout_margin="@dimen/_15sdp"
                 />

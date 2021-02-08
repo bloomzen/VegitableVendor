@@ -926,8 +926,9 @@ public class CartFragment extends Fragment {
                     String itemQuantity = res.getString(4);
                     String itemUnit = res.getString(5);
                     String itemGms = res.getString(7);
+                    String final_price = res.getString(3);
 
-                    CartData cartDataSummary = new CartData("" + itemName, "" + itemQuantity, "" + itemUnit, "" + itemGms);
+                    CartData cartDataSummary = new CartData("" + itemName, "" + itemQuantity, "" + itemUnit, "" + itemGms,""+final_price);
 
                     cartSummary.add(cartDataSummary);
                 }
@@ -959,8 +960,9 @@ public class CartFragment extends Fragment {
                     String itemQuantity = res.getString(4);
                     String itemUnit = res.getString(5);
                     String itemGms = res.getString(7);
+                    String final_price = res.getString(3);
 
-                    CartData cartDataSummary = new CartData("" + itemName, "" + itemQuantity, "" + itemUnit, "" + itemGms);
+                    CartData cartDataSummary = new CartData("" + itemName, "" + itemQuantity, "" + itemUnit, "" + itemGms, ""+final_price);
 
                     cartSummary.add(cartDataSummary);
                 }

@@ -9,73 +9,41 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
-    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="item" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="53dadae6-1b50-4e46-944f-17327e8280e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapetMyOrderGuest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapetMyOrderMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterMySummaryMember.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/MyOrderData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/basket_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/circle_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/square_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/basket_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/circle_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/square_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/basket_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/circle_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/square_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/basket_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/circle_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/square_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/basket_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/circle_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/square_logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/basket_no.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/circle_logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/square_logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/no_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartDataGuest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartDataGuest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/biroba.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.1.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/app/app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartSummary.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartSummary.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCategoryOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCategoryOrders.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterChangePrice.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterChangePrice.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterProductUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterProductUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/HotelOrderHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/HotelOrderHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminAddItemsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminAddItemsFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminOrderDetailsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminOrderDetailsFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminViewHotelOrderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminViewHotelOrderFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/ChangePriceFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/ChangePriceFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelItemsFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelItemsFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelViewOrderFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelViewOrderFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/OrderApprovalFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/OrderApprovalFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/OrderCompletedFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/OrderCompletedFragment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/orderPendingFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/orderPendingFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/MyFirebaseMessaging.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/MyFirebaseMessaging.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/OrderData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/OrderData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/CartData.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/CartData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/CartFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/CartFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/EditCartItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/EditCartItemFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/SearchFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/SearchFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/ViewOrdersFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/ViewOrdersFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/categoriesItemFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/categoriesItemFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/myOrderList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/myOrderList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/admin_order_pager_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/admin_order_pager_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout_guest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout_guest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_add_items.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_add_items.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_hotel_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_hotel_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_view_hotel_order.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_view_hotel_order.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_order_details.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_order_details.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cart.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_cart.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_change_price.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_change_price.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_cart_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_cart_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_order_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_my_order_list.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/order_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/order_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/row_list.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/row_list.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor.iml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -98,30 +66,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/no_item.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminAccountListFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="16" column="25" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="28" />
+            <state relative-caret-position="618">
+              <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
-          <provider editor-type-id="android-designer2" />
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelPaymentFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/SearchFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2920">
-              <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
+            <state relative-caret-position="1872">
+              <caret line="269" column="5" lean-forward="true" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
+              <folding>
+                <element signature="e#4447#10491#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -141,7 +101,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>itemQ</find>
       <find>Toas</find>
       <find>getContext()</find>
       <find>today</find>
@@ -171,6 +130,7 @@
       <find>isKgs</find>
       <find>Pcs</find>
       <find>rl_price</find>
+      <find>itemFinalCost</find>
     </findStrings>
     <replaceStrings>
       <replace>btn_exo_vege</replace>
@@ -195,20 +155,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/orderItemData.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterMyOrderItem.java" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/order_item_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminOrderDetailsFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminHotelOrder.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminHomeActivity.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/TotalItemsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/itemList.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelItemsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_cart.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_edit_cart_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout_guest.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/res/layout/row_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/EditCartItemFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/OrderData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/ViewOrdersFragment.java" />
@@ -221,31 +171,41 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/OrderApprovalFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_hotel_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminHotelListFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/orderPendingFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/order_list.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCategoryOrders.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/HotelOrderHolder.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/admin_order_pager_layout.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminViewHotelOrderFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_view_hotel_order.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterChangePrice.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_add_items.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_change_price.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/ChangePriceFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/CartFragment.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterProductUser.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartData.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartDataGuest.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartSummary.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapetMyOrderGuest.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapetMyOrderMember.java" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelViewOrderFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminAddItemsFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/MyFirebaseMessaging.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/no_item.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/SearchFragment.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterProductUser.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/row_list.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelItemsFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_cart.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/CartData.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/CartFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/HomeFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartSummary.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/orderPendingFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminViewHotelOrderFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelViewOrderFragment.java" />
+        <option value="$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_order_details.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminOrderDetailsFragment.java" />
       </list>
     </option>
   </component>
@@ -267,48 +227,51 @@
         <subPane>
           <expand>
             <path>
-              <item name="vendor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="biroba" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
             </path>
             <path>
-              <item name="vendor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="biroba" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
             </path>
             <path>
-              <item name="vendor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="biroba" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="vendor" type="cbb59c9e:AndroidPsiDirectoryNode" />
             </path>
             <path>
-              <item name="vendor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="biroba" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="java" type="edd41e36:AndroidSourceTypeNode" />
+              <item name="vendor" type="cbb59c9e:AndroidPsiDirectoryNode" />
+              <item name="AdminScreen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="biroba" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="java" type="edd41e36:AndroidSourceTypeNode" />
               <item name="vendor" type="cbb59c9e:AndroidPsiDirectoryNode" />
               <item name="UserScreens" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="vendor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="biroba" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
             </path>
             <path>
-              <item name="vendor" type="1abcf292:AndroidViewProjectNode" />
+              <item name="biroba" type="1abcf292:AndroidViewProjectNode" />
               <item name="app" type="feadf853:AndroidModuleNode" />
               <item name="res" type="d4f16f75:AndroidResFolderNode" />
               <item name="layout" type="ddeffd01:AndroidResFolderTypeNode" />
-            </path>
-            <path>
-              <item name="vendor" type="1abcf292:AndroidViewProjectNode" />
-              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -473,40 +436,7 @@
     <editor active="true" />
     <layout>
       <window_info id="Captures" order="0" sideWeight="0.50141644" side_tool="true" weight="0.13355705" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49433428" visible="true" weight="0.21140939" />
-      <window_info id="Structure" order="2" sideWeight="0.5056657" side_tool="true" weight="0.22214764" />
-      <window_info id="Build Variants" order="3" side_tool="true" />
-      <window_info id="Image Layers" order="4" />
-      <window_info id="Designer" order="5" />
-      <window_info id="Resources Explorer" order="6" />
-      <window_info id="Capture Tool" order="7" />
-      <window_info id="Favorites" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Run" order="0" weight="0.3286119" />
-      <window_info anchor="bottom" id="TODO" order="1" weight="0.3286119" />
-      <window_info anchor="bottom" id="Android Profiler" order="2" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.57932013" />
-      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49798658" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.6175637" />
-      <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49731544" visible="true" weight="0.28611898" />
-      <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
-      <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.3286119" />
-      <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.4986577" weight="0.6175637" />
-      <window_info anchor="right" id="Assistant" order="0" weight="0.3295302" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Gradle" order="2" />
-      <window_info anchor="right" id="Theme Preview" order="3" />
-      <window_info anchor="right" id="Flutter Inspector" order="4" />
-      <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info active="true" anchor="right" id="Preview" order="6" visible="true" weight="0.27181208" />
-      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" weight="0.32885906" />
-      <window_info anchor="right" id="Flutter Outline" order="8" weight="0.3295302" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Captures" order="0" sideWeight="0.50141644" side_tool="true" weight="0.13355705" />
-      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49433428" visible="true" weight="0.22013423" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" sideWeight="0.49433428" visible="true" weight="0.21140939" />
       <window_info id="Structure" order="2" sideWeight="0.5056657" side_tool="true" weight="0.22214764" />
       <window_info id="Build Variants" order="3" side_tool="true" />
       <window_info id="Image Layers" order="4" />
@@ -519,22 +449,55 @@
       <window_info anchor="bottom" id="Android Profiler" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.57932013" />
       <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49798658" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.49932885" side_tool="true" weight="0.6175637" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.6175637" />
       <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.4966443" weight="0.31444758" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49731544" weight="0.28611898" />
       <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.3286119" />
       <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.3286119" />
-      <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.50067115" weight="0.6175637" />
-      <window_info active="true" anchor="right" id="Assistant" order="0" visible="true" weight="0.3295302" />
+      <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.4986577" weight="0.43767706" />
+      <window_info anchor="right" id="Assistant" order="0" weight="0.3295302" />
       <window_info anchor="right" id="Capture Analysis" order="1" />
       <window_info anchor="right" id="Gradle" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="right" id="Flutter Inspector" order="4" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
-      <window_info active="true" anchor="right" id="Preview" order="6" visible="true" weight="0.2080537" />
-      <window_info anchor="right" id="Device File Explorer" order="7" side_tool="true" weight="0.32885906" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.27181208" />
+      <window_info anchor="right" id="Device File Explorer" order="7" weight="0.32885906" />
+      <window_info anchor="right" id="Flutter Outline" order="8" weight="0.3295302" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Captures" order="0" sideWeight="0.50141644" side_tool="true" weight="0.13355705" />
+      <window_info content_ui="combo" id="Project" order="1" sideWeight="0.49433428" visible="true" weight="0.21140939" />
+      <window_info id="Structure" order="2" sideWeight="0.5056657" side_tool="true" weight="0.22214764" />
+      <window_info id="Build Variants" order="3" side_tool="true" />
+      <window_info id="Image Layers" order="4" />
+      <window_info id="Designer" order="5" />
+      <window_info id="Resources Explorer" order="6" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info id="Favorites" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.3286119" />
+      <window_info anchor="bottom" id="TODO" order="1" weight="0.3286119" />
+      <window_info anchor="bottom" id="Android Profiler" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.57932013" />
+      <window_info anchor="bottom" id="Terminal" order="4" sideWeight="0.49798658" weight="0.3286119" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.5013423" side_tool="true" weight="0.6175637" />
+      <window_info anchor="bottom" id="Flutter Performance" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Build" order="8" sideWeight="0.49731544" weight="0.28611898" />
+      <window_info anchor="bottom" id="Find" order="9" weight="0.3286119" />
+      <window_info anchor="bottom" id="Inspection Results" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Dependency Viewer" order="11" weight="0.3286119" />
+      <window_info anchor="bottom" id="Logcat" order="12" sideWeight="0.4986577" weight="0.6175637" />
+      <window_info anchor="right" id="Assistant" order="0" weight="0.3295302" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Flutter Inspector" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Preview" order="6" weight="0.27181208" />
+      <window_info anchor="right" id="Device File Explorer" order="7" weight="0.32885906" />
       <window_info anchor="right" id="Flutter Outline" order="8" weight="0.3295302" />
     </layout-to-restore>
   </component>
@@ -555,142 +518,28 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelItemsFragment.java</url>
-          <line>275</line>
+          <line>287</line>
           <properties />
           <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelItemsFragment.java</url>
+          <line>361</line>
+          <properties class="com.example.vendor.AdminScreen.HotelItemsFragment" method="loadData">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminOrderDetailsFragment.java</url>
+          <line>88</line>
+          <properties class="com.example.vendor.AdminScreen.AdminOrderDetailsFragment" method="getAllOrders" />
+          <option name="timeStamp" value="15" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/MyOrderData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-          <folding>
-            <element signature="e#614#615#0" expanded="true" />
-            <element signature="e#674#675#0" expanded="true" />
-            <element signature="e#726#727#0" expanded="true" />
-            <element signature="e#760#761#0" expanded="true" />
-            <element signature="e#790#791#0" expanded="true" />
-            <element signature="e#836#837#0" expanded="true" />
-            <element signature="e#874#875#0" expanded="true" />
-            <element signature="e#910#911#0" expanded="true" />
-            <element signature="e#942#943#0" expanded="true" />
-            <element signature="e#992#993#0" expanded="true" />
-            <element signature="e#1034#1035#0" expanded="true" />
-            <element signature="e#1069#1070#0" expanded="true" />
-            <element signature="e#1100#1101#0" expanded="true" />
-            <element signature="e#1148#1149#0" expanded="true" />
-            <element signature="e#1188#1189#0" expanded="true" />
-            <element signature="e#1227#1228#0" expanded="true" />
-            <element signature="e#1262#1263#0" expanded="true" />
-            <element signature="e#1318#1319#0" expanded="true" />
-            <element signature="e#1366#1367#0" expanded="true" />
-            <element signature="e#1401#1402#0" expanded="true" />
-            <element signature="e#1432#1433#0" expanded="true" />
-            <element signature="e#1480#1481#0" expanded="true" />
-            <element signature="e#1520#1521#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout_guest.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="333">
-          <caret line="95" column="44" selection-start-line="95" selection-start-column="25" selection-end-line="95" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterTotalSummaryItemList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="53" selection-start-line="53" selection-end-line="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/categoriesItemFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterMySummaryMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="46" column="96" selection-start-line="46" selection-start-column="96" selection-end-line="46" selection-end-column="96" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#624#625#0" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/cart_list_layout.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="85" column="43" selection-start-line="85" selection-start-column="43" selection-end-line="85" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/myOrderList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="132" column="117" selection-start-line="132" selection-start-column="117" selection-end-line="132" selection-end-column="117" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/HomeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="367" column="46" selection-start-line="367" selection-start-column="46" selection-end-line="367" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/ViewOrdersFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="62" column="48" lean-forward="true" selection-start-line="60" selection-start-column="11" selection-end-line="62" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/OrderApprovalFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="78" column="62" selection-start-line="78" selection-start-column="62" selection-end-line="78" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_hotel_list.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminHotelOrder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_view_orders.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_orders.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminHotelListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_hotel_list.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
@@ -706,23 +555,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/orderPendingFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5307">
-          <caret line="364" column="58" selection-start-line="364" selection-start-column="58" selection-end-line="364" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/HotelOrderHolder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_order_pending.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/orderItemData.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -735,13 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="478">
           <caret line="238" column="26" selection-start-line="238" selection-start-column="26" selection-end-line="238" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminViewHotelOrderFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="309" column="62" selection-start-line="309" selection-start-column="62" selection-end-line="309" selection-end-column="62" />
         </state>
       </provider>
     </entry>
@@ -761,14 +592,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_view_hotel_order.xml">
-      <provider selected="true" editor-type-id="android-designer2" />
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="3200">
-          <caret line="160" column="61" selection-start-line="160" selection-start-column="61" selection-end-line="160" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/admin_order_pager_layout.xml">
       <provider selected="true" editor-type-id="android-designer2" />
       <provider editor-type-id="text-editor">
@@ -785,14 +608,6 @@
           <folding>
             <element signature="e#16871#16886#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
-      <provider editor-type-id="android-designer2" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="54" column="8" selection-start-line="54" selection-start-column="8" selection-end-line="54" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -897,54 +712,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/vivo-vivo_1901-SOGA4S6SG6HUMBRS/data/data/com.example.vendor/shared_prefs/MyLogin.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/CartFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="480" column="63" selection-start-line="480" selection-start-column="63" selection-end-line="480" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="165" column="9" selection-start-line="165" selection-start-column="9" selection-end-line="165" selection-end-column="9" />
-          <folding>
-            <element signature="e#13143#13144#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartDataGuest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="538">
-          <caret line="146" column="50" selection-start-line="146" selection-start-column="50" selection-end-line="146" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterProductUser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="517" column="97" lean-forward="true" selection-start-line="517" selection-start-column="97" selection-end-line="517" selection-end-column="97" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Documents/AndroidStudio/DeviceExplorer/vivo-vivo_1901-SOGA4S6SG6HUMBRS/data/data/com.example.vendor/shared_prefs/MyLogin.xml" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminAddItemsFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="618">
           <caret line="864" selection-start-line="864" selection-end-line="864" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelViewOrderFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="141" column="21" selection-start-line="141" selection-start-column="21" selection-end-line="141" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -969,13 +741,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCategoryOrders.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="116">
-          <caret line="54" column="27" selection-start-line="54" selection-start-column="27" selection-end-line="54" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapetMyOrderMember.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -993,16 +758,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartSummary.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="59" column="74" selection-start-line="59" selection-start-column="74" selection-end-line="59" selection-end-column="74" />
-          <folding>
-            <element signature="e#2022#2023#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/MyFirebaseMessaging.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1010,11 +765,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider editor-type-id="android-manifest" />
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        <state relative-caret-position="438">
+          <caret line="83" column="19" lean-forward="true" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1026,18 +780,264 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+        </state>
+      </provider>
+      <provider editor-type-id="android-manifest" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterProductUser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="56" selection-start-line="56" selection-end-line="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/TotalItemsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="143">
+          <caret line="214" column="44" selection-start-line="214" selection-start-column="44" selection-end-line="214" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelItemsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="268" column="72" lean-forward="true" selection-start-line="268" selection-start-column="72" selection-end-line="268" selection-end-column="72" />
+          <folding>
+            <element signature="e#20758#23041#0" expanded="true" />
+            <element signature="e#20952#23013#0" expanded="true" />
+            <element signature="e#23012#23013#0" expanded="true" />
+            <element signature="e#23040#23041#0" expanded="true" />
+            <element signature="e#27094#29458#0" />
+            <element signature="e#29464#31847#0" />
+            <element signature="e#31854#34236#0" />
+            <element signature="e#34242#36617#0" />
+            <element signature="e#36624#38992#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="55" column="39" lean-forward="true" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Vendor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="138" column="32" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
+          <folding>
+            <element signature="e#6059#6074#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/row_list.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="11" column="44" selection-start-line="11" selection-start-column="44" selection-end-line="11" selection-end-column="44" />
+          <folding>
+            <element signature="e#492#507#0" expanded="true" />
+            <element signature="e#538#553#0" expanded="true" />
+            <element signature="e#879#894#0" expanded="true" />
+            <element signature="e#927#942#0" expanded="true" />
+            <element signature="e#1031#1045#0" expanded="true" />
+            <element signature="e#2561#2576#0" expanded="true" />
+            <element signature="e#4173#4192#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/SearchFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2920">
+        <state relative-caret-position="618">
           <caret line="183" column="57" selection-start-line="183" selection-start-column="57" selection-end-line="183" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_search.xml">
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_cart.xml">
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="21" column="4" selection-start-line="21" selection-start-column="4" selection-end-line="21" selection-end-column="4" />
+        <state relative-caret-position="360">
+          <caret line="74" column="24" lean-forward="true" selection-start-line="74" selection-start-column="24" selection-end-line="74" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="168" lean-forward="true" selection-start-line="168" selection-end-line="168" />
+          <folding>
+            <element signature="e#13104#13105#0" expanded="true" />
+            <element signature="e#13143#13144#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/HomeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="152" column="52" lean-forward="true" selection-start-line="150" selection-start-column="12" selection-end-line="152" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartSummary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="558">
+          <caret line="88" column="76" selection-start-line="88" selection-start-column="76" selection-end-line="88" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/UserScreens/CartFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="964" column="137" selection-start-line="964" selection-start-column="137" selection-end-line="964" selection-end-column="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/CartData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="17" column="42" selection-start-line="17" selection-start-column="42" selection-end-line="17" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCartDataGuest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_order_pending.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="197">
+          <caret line="42" column="41" selection-start-line="42" selection-start-column="41" selection-end-line="42" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminOrderDetailsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="75" column="54" selection-start-line="75" selection-start-column="54" selection-end-line="75" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminHotelListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="88" column="51" selection-start-line="88" selection-start-column="26" selection-end-line="88" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelViewOrderFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="156" column="46" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_order_details.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2520">
+          <caret line="126" selection-start-line="126" selection-end-line="126" />
+          <folding>
+            <element signature="e#4343#4358#0" expanded="true" />
+            <element signature="e#5740#5755#0" expanded="true" />
+            <element signature="e#5870#5885#0" expanded="true" />
+            <element signature="e#5966#5981#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/orderPendingFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="347" selection-start-line="347" selection-end-line="347" />
+          <folding>
+            <element signature="class#3897:11776" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/Adapters/AdapterCategoryOrders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="54" column="33" selection-start-line="54" selection-start-column="33" selection-end-line="54" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminViewHotelOrderFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1114">
+          <caret line="126" column="71" selection-start-line="126" selection-start-column="71" selection-end-line="126" selection-end-column="71" />
+          <folding>
+            <element signature="class#5163:5654" />
+            <element signature="e#5856#8652#0" />
+            <element signature="method#subscribeToTopic#0;class#AdminViewHotelOrderFragment#0" />
+            <element signature="method#prepareNotificationMessage#0;class#AdminViewHotelOrderFragment#0" />
+            <element signature="method#sendFCMNotification#0;class#AdminViewHotelOrderFragment#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_admin_view_hotel_order.xml">
+      <provider editor-type-id="android-designer2" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="431">
+          <caret line="147" column="46" selection-start-line="136" selection-start-column="6" selection-end-line="147" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/AdminAccountListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="618">
+          <caret line="83" lean-forward="true" selection-start-line="83" selection-end-line="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/vendor/AdminScreen/HotelPaymentFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1872">
+          <caret line="269" column="5" lean-forward="true" selection-start-line="269" selection-start-column="5" selection-end-line="269" selection-end-column="5" />
+          <folding>
+            <element signature="e#4447#10491#0" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -140,9 +140,10 @@ public class HotelViewOrderFragment extends Fragment {
                     holder.txt_hotelNumber.setText("Order ID:" + "" + model.getOrderNumber());
                     holder.txt_hotelTime.setText("Order ON:" + "" + model.getOrderDate() + "\n" + model.getOrderTime());
                    // holder.btn_status.setText("" + model.getOrderStatus());
-                    holder.btn_status.setOnClickListener(new View.OnClickListener() {
+
+                    holder.view.setOnClickListener(new View.OnClickListener() {
                         @Override
-                        public void onClick(View v) {
+                        public void onClick(View view) {
                             AdminOrderDetailsFragment hotelOrderFragment = new AdminOrderDetailsFragment();
 
                             FragmentTransaction fragmentTransaction = getActivity().getSupportFragmentManager().beginTransaction();
@@ -153,13 +154,14 @@ public class HotelViewOrderFragment extends Fragment {
                             bundle.putString("orderOn",model.getOrderDate()  );
                             bundle.putString("member",model.getMemberType());
                             bundle.putString("orderTime",model.getOrderTime());
+                            bundle.putString("totalPrice",model.getTotal_order_amount());
 
                             hotelOrderFragment.setArguments(bundle);
 
                             fragmentTransaction.replace(R.id.fragment_Admin_container, hotelOrderFragment).addToBackStack(null).commit();
-
                         }
                     });
+
 
                 }
 

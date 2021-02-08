@@ -314,7 +314,7 @@ public class AdminViewHotelOrderFragment extends Fragment {
                             holder.txt_itemName.setText(model.getItemName()+" x "+model.getItemGms()+" "+ " gms");
                         }
 
-                        holder.txt_itemPrice.setText(model.getItemFinalPrice());
+                        holder.txt_itemPrice.setText("Rs. "+model.getItemFinalPrice());
                     }catch (Exception e){
                         Log.v("excep",""+e.getMessage());
                     }

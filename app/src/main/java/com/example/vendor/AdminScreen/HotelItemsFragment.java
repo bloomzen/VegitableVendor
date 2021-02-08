@@ -120,8 +120,6 @@ public class HotelItemsFragment extends Fragment {
     ArrayList<String> dataList;
 
 
-
-
     ArrayList<String> itemQuantityList, itemList;
 
     @Override
@@ -143,13 +141,23 @@ public class HotelItemsFragment extends Fragment {
 
 
             SimpleDateFormat sdf = new SimpleDateFormat("yyyy.MMM.dd");
-            currentDate = sdf.format(new Date());
+            currentDate = sdf.format(new Date());// 12.06.1999
             today = currentDate.replace(".", "");
+
+            //oredrContent
             orderContent = FirebaseDatabase.getInstance().getReference().child("OrderContent");
 
             totalSummary = new HashMap<>();
+
+
+            //order
             databaseReference = FirebaseDatabase.getInstance().getReference().child("Order");
+
+
+            //hotelwiseList
             mHotelList = FirebaseDatabase.getInstance().getReference().child("HotelWiseList");
+
+
             rl_gold.setLayoutManager(new LinearLayoutManager(getContext()));
             rl_bronze.setLayoutManager(new LinearLayoutManager(getContext()));
             rl_fixed.setLayoutManager(new LinearLayoutManager(getContext()));
@@ -234,118 +242,125 @@ public class HotelItemsFragment extends Fragment {
 
 //to export to the excel
 
-        read(new FirebaseListCallBackData() {
-            @Override
-            public void onListCallBackData(final List<String> itemListData) {
-                Log.v("itemData", "" + itemListData.toString());
-                readData(new FirebaseCallback() {
-                    @Override
-                    public void onCallsback(List<String> list) {
-                        Log.v("hotelist", "" + list.toString());
-                        File folder = new File(Environment.getExternalStorageDirectory() + "/VendorData");
-                        boolean success = true;
-                        if (!folder.exists()) {
-                            success = folder.mkdir();
-                        }
-                        if (success) {
-                            // Do something on success
-                            String ext = Environment.getExternalStorageDirectory().toString();
-                            final File file = new File(ext, "VendorData/" + txt_date.getText().toString() + "hotelWise.csv");
+//        read(new FirebaseListCallBackData() {
+//            @Override
+//            public void onListCallBackData(final List<String> itemListData) {
+//                Log.v("itemData", "" + itemListData.toString());   "Cabbage","pataoy"
+//                readData(new FirebaseCallback() {
+//                    @Override
+//                    public void onCallsback(List<String> list) {
+//                        Log.v("hotelist", "" + list.toString());   "samraj","hdjhd"
+//
+//
+//                        File folder = new File(Environment.getExternalStorageDirectory() + "/VendorData");
+//                        boolean success = true;
+//                        if (!folder.exists()) {
+//                            success = folder.mkdir();
+//                        }
+//                        if (success) {
+//                            // Do something on success
+//                            String ext = Environment.getExternalStorageDirectory().toString();
+//                            final File file = new File(ext, "VendorData/" + txt_date.getText().toString() + "hotelWise.csv");
+//
+//                            dataList = new ArrayList<>();
+//
+//
+//                            try {
+//                                FileWriter fileWriter = new FileWriter(file);
+//                                final CSVWriter writer = new CSVWriter(fileWriter);
+//
+//                                String[] list1 = new String[0];
+//                                list1 = list.toArray(list1);
+//
+//                                Log.v("List1", "" + list1.length);
+//
+//
+//                                writer.writeNext(list1); header
+//
+//
+//                                                 items,samarj,sudha
+//
+//                                readItemData(new FirebaseListCallBack() {
+//                                    @Override
+//                                    public void onListCallBack(List<String> itemDataList) { "samraj","76kg", "gyfhfd","89kg"
+//                                        Log.v("data", "" + itemDataList);
+//
+//                                        for (int i = 0; i < itemDataList.size(); i++) { samraj
+//
+//                                            dataList.add(itemDataList.get(i)); samraj
+//
+//                                            Log.v("items ", "" + itemDataList.get(i));
+//                                            flag = true;
+//                                            for (int hotels = 1; hotels < hotelList.size(); hotels++) { samarj,sudha
+//
+//
+//                                                Log.v("hotelName", "" + hotelList.get(hotels));
+//                                                for (int item = 0; item < itemListData.size(); item++) {
+//
+//
+//                                                    if (itemListData.get(item).equals(hotelList.get(hotels))) {
+//                                                        Log.v("quantss", "" + itemListData.get(item));
+//
+//                                                        dataList.add(itemListData.get(item + 1));
+//
+//                                                        Log.v("quantitty", "" + itemListData.get(item + 1));
+//                                                            Log.v("data",itemListData.toString());
+//                                                        flag = false;
+//                                                        break;
+//                                                    } else {
+//                                                        item = item + 2;
+//                                                    }
+//                                                }
+//
+//                                                if (flag) {
+//                                                    dataList.add("-");
+//                                                }
+//
+//
+//                                            }
+//
 
-                            dataList = new ArrayList<>();
+//                                            String[] list2 = new String[0];
+//
+//                                            list2 = dataList.toArray(list2);
+//                                            Log.v("itemList", "" + dataList.toString());
+//
+//                                            writer.writeNext(list2);
+//
+//                                            dataList.clear();
+//
+//
+//                                        }
+//
+//
+//                                    }
+//                                });
+//
+//
+//                                writer.close();
+//                                Toast.makeText(Vendor.getAppContext(), "OK", Toast.LENGTH_SHORT).show();
+//                            } catch (IOException e) {
+//                                e.printStackTrace();
+//                            }
+//
+//
+//                        }
+//                    }
+//                });
+//            }
+//        });
 
 
-                            try {
-                                FileWriter fileWriter = new FileWriter(file);
-                                final CSVWriter writer = new CSVWriter(fileWriter);
-
-                                String[] list1 = new String[0];
-                                list1 = list.toArray(list1);
-
-                                Log.v("List1", "" + list1.length);
 
 
-                                writer.writeNext(list1);
-
-
-                                readItemData(new FirebaseListCallBack() {
-                                    @Override
-                                    public void onListCallBack(List<String> itemDataList) {
-                                        Log.v("data", "" + itemDataList);
-
-                                        for (int i = 0; i < itemDataList.size(); i++) {
-
-                                            dataList.add(itemDataList.get(i));
-
-                                            Log.v("items ", "" + itemDataList.get(i));
-                                            flag = true;
-                                            for (int hotels = 1; hotels < hotelList.size(); hotels++) {
-
-
-                                                Log.v("hotelName", "" + hotelList.get(hotels));
-                                                for (int item = 0; item < itemListData.size(); item++) {
-
-
-                                                    if (itemListData.get(item).equals(hotelList.get(hotels))) {
-                                                        Log.v("quantss", "" + itemListData.get(item));
-
-                                                        dataList.add(itemListData.get(item + 1));
-
-                                                        Log.v("quantitty", "" + itemListData.get(item + 1));
-
-                                                        flag = false;
-                                                        break;
-                                                    } else {
-                                                        item = item + 2;
-                                                    }
-                                                }
-
-                                                if (flag) {
-                                                    dataList.add("-");
-                                                }
-
-
-                                            }
-
-                                            String[] list2 = new String[0];
-
-                                            list2 = dataList.toArray(list2);
-                                            Log.v("itemList", "" + dataList.toString());
-
-                                            writer.writeNext(list2);
-
-                                            dataList.clear();
-
-
-                                        }
-
-
-                                    }
-                                });
-
-
-                                writer.close();
-                                Toast.makeText(Vendor.getAppContext(), "OK", Toast.LENGTH_SHORT).show();
-                            } catch (IOException e) {
-                                e.printStackTrace();
-                            }
-
-
-                        }
-                    }
-                });
-            }
-        });
 
 
     }
 
 
-
-
-
     // load the data in firebase of hotelwise
     private void loadData() {
+
 
         try {
             dbRef = FirebaseDatabase.getInstance().getReference().child("Order");
@@ -511,8 +526,7 @@ public class HotelItemsFragment extends Fragment {
     }
 
 
-
-//firebase callback for itemQuantity list which creates list like, {"Sudha","45","Samraj","78"}
+    //firebase callback for itemQuantity list which creates list like, {"Sudha","45","Samraj","78"}
     private void read(final FirebaseListCallBackData firebaseListCallBackData) {
 
         dataList = new ArrayList<>();
@@ -611,9 +625,7 @@ public class HotelItemsFragment extends Fragment {
     }
 
 
-
-
-//firebase callback for hotelList, create list like {"Sudha","Samraj"}
+    //firebase callback for hotelList, create list like {"Sudha","Samraj"}
     private void readData(final FirebaseCallback firebaseCallback) {
 
 
@@ -694,9 +706,7 @@ public class HotelItemsFragment extends Fragment {
     }
 
 
-
-
-//shows gold hotel list
+    //shows gold hotel list
     private void showGoldHotels() {
 
         listGold = new ArrayList<>();

@@ -8,6 +8,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,9 +35,9 @@ public class AdminOrderDetailsFragment extends Fragment {
         // Required empty public constructor
     }
 
-    String hotelName, hotelID, hotelDateTime, member, status;
+    String hotelName, hotelID, hotelDateTime, member, status, totalAmount;
 
-    TextView txt_hotelName, txt_orderNumber, txt_orderTime, txt_member;
+    TextView txt_hotelName, txt_orderNumber, txt_orderTime, txt_member, txt_total_Price_view_order;
     RecyclerView rl_item;
 
     FirebaseRecyclerAdapter<orderItemData, adminOrderPagerHolder> adapter;
@@ -56,13 +57,14 @@ public class AdminOrderDetailsFragment extends Fragment {
             hotelDateTime = bundle.getString("orderOn","");
             member = bundle.getString("member","");
             String orderTime = bundle.getString("orderTime","");
+            totalAmount = bundle.getString("totalPrice","");
 
 
             txt_hotelName = view.findViewById(R.id.txt_hotelName_view_orders);
             txt_orderNumber = view.findViewById(R.id.txt_orderIDNumber_view_order);
             txt_orderTime = view.findViewById(R.id.txt_orderONNumber_view_order);
             txt_member = view.findViewById(R.id.txt_memberType_orders);
-
+            txt_total_Price_view_order = view.findViewById(R.id.txt_total_Price_view_order);
             rl_item = view.findViewById(R.id.recycler_pending_items_view_order);
             rl_item.setLayoutManager(new LinearLayoutManager(getContext()));
 
@@ -71,6 +73,7 @@ public class AdminOrderDetailsFragment extends Fragment {
             txt_orderNumber.setText(""+hotelID);
             txt_orderTime.setText(""+hotelDateTime + "\n" + orderTime);
             txt_member.setText(""+member);
+            txt_total_Price_view_order.setText("Total "+"Rs. "+ totalAmount);
             mOrderContent = FirebaseDatabase.getInstance().getReference().child("OrderContent").child(hotelName).child(hotelID);
             mOrder = FirebaseDatabase.getInstance().getReference().child("Order").child(hotelName).child(hotelID);
 
@@ -83,17 +86,31 @@ public class AdminOrderDetailsFragment extends Fragment {
         return view;
     }
 
-    private void getAllOrders(){
+    private void getAllOrders() {
 
 
-        try {
-            Query query = mOrderContent ;
+
+            Query query = mOrderContent;
             options = new FirebaseRecyclerOptions.Builder<orderItemData>().setQuery(query, orderItemData.class).setLifecycleOwner(this).build();
             adapter = new FirebaseRecyclerAdapter<orderItemData, adminOrderPagerHolder>(options) {
                 @Override
                 protected void onBindViewHolder(@NonNull adminOrderPagerHolder holder, int position, @NonNull final orderItemData model) {
-                    holder.txt_itemName.setText(model.getItemName() +" x " + model.getItemQuantity());
-                    holder.txt_itemPrice.setText(model.getItemFinalPrice());
+
+                        if(model.getItemGms().equalsIgnoreCase("0")){
+                            holder.txt_itemName.setText(model.getItemName()+" x "+model.getItemQuantity()+" "+ model.getItemUnit());
+                        }else {
+                            holder.txt_itemName.setText(model.getItemName()+" x "+model.getItemQuantity()+" "+ model.getItemUnit() + " , " + model.getItemGms() + " gms");
+                        }if(model.getItemQuantity().equalsIgnoreCase("0")){
+                            holder.txt_itemName.setText(model.getItemName()+" x "+model.getItemGms()+" "+ " gms");
+                        }
+
+
+
+                        holder.txt_itemPrice.setText("Rs. "+model.getItemFinalPrice());
+
+                        Log.v("itemPrice",""+model.itemFinalPrice);
+
+
 
                 }
 
@@ -107,10 +124,6 @@ public class AdminOrderDetailsFragment extends Fragment {
             };
 
             rl_item.setAdapter(adapter);
-        }catch (Exception e){
-            Toast.makeText(Vendor.getAppContext(), "All Orders"+e.getMessage(), Toast.LENGTH_SHORT).show();
-        }
-
 
 
 

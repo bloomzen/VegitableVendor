@@ -10,11 +10,13 @@ public class CartData {
 
     public CartData(){}
 
-    public CartData(String item_Name, String item_Quantity, String item_Unit , String item_Gms){
+    public CartData(String item_Name, String item_Quantity, String item_Unit , String item_Gms, String item_Final_Cost){
         Item_Name = item_Name;
         Item_Quantity = item_Quantity;
         Item_Unit = item_Unit;
         Item_Gms = item_Gms;
+        Item_Final_Cost = item_Final_Cost;
+
     }
     public CartData(String item_Name, String item_Price, String item_Final_Cost, String item_Quantity, String item_Unit, String item_Image, String itemGms) {
         Item_Name = item_Name;
